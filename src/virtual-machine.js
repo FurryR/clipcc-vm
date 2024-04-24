@@ -659,6 +659,7 @@ class VirtualMachine extends EventEmitter {
         this.runtime.setEditingTarget(this.editingTarget);
         this.runtime.ioDevices.cloud.setStage(this.runtime.getTargetForStage());
         // });
+        return Promise.resolve();
     }
 
     /**
